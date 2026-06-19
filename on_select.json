@@ -1,0 +1,26 @@
+{
+  "context": {
+    "domain": "ONDC:ONEST10",
+    "action": "on_select",
+    "bap_id": "ondc.beuhub.in",
+    "transaction_id": "test-dummy-12345"
+  },
+  "message": {
+    "order": {
+      "provider": { "id": "provider-1" },
+      "items": [
+        {
+          "id": "item-1",
+          "tags": [
+            {
+              "descriptor": { "name": "Stipend Details" },
+              "list": [
+                { "descriptor": { "code": "AMOUNT" }, "value": "10000 INR" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
