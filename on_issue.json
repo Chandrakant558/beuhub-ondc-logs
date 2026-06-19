@@ -1,0 +1,35 @@
+{
+  "context": {
+    "domain": "ONDC:ONEST10",
+    "action": "on_issue",
+    "version": "2.0.0",
+    "bap_id": "ondc.beuhub.in",
+    "bap_uri": "https://ondc.beuhub.in/webhook",
+    "transaction_id": "test-dummy-12345",
+    "message_id": "msg-issue-123",
+    "location": { "city": { "code": "std:999" }, "country": { "code": "IND" } },
+    "timestamp": "2026-06-19T14:05:00.000Z"
+  },
+  "message": {
+    "issue": {
+      "id": "issue-1",
+      "issue_actions": {
+        "respondent_actions": [
+          {
+            "respondent_action": "PROCESSING",
+            "short_desc": "Complaint is being processed by the provider",
+            "updated_at": "2026-06-19T14:05:00.000Z",
+            "updated_by": {
+              "org": { "name": "provider-1::ONDC:ONEST10" },
+              "contact": { "phone": "1234567890", "email": "support@provider.com" },
+              "person": { "name": "Support Agent" }
+            },
+            "cascaded_level": 1
+          }
+        ]
+      },
+      "created_at": "2026-06-19T14:00:00.000Z",
+      "updated_at": "2026-06-19T14:05:00.000Z"
+    }
+  }
+}
