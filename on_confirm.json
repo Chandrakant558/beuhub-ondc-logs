@@ -1,0 +1,25 @@
+{
+  "context": {
+    "domain": "ONDC:ONEST10",
+    "action": "on_confirm",
+    "bap_id": "ondc.beuhub.in",
+    "transaction_id": "test-dummy-12345"
+  },
+  "message": {
+    "order": {
+      "id": "BEUHUB-ORDER-999",
+      "state": "ACCEPTED",
+      "provider": { "id": "provider-1" },
+      "items": [{ "id": "item-1" }],
+      "fulfillments": [{
+        "state": {
+          "descriptor": { "code": "APPLICATION_ACCEPTED" }
+        },
+        "customer": {
+          "person": { "name": "Rahul Kumar" },
+          "contact": { "email": "rahul@example.com", "phone": "9876543210" }
+        }
+      }]
+    }
+  }
+}
