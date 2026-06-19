@@ -1,0 +1,26 @@
+{
+  "context": {
+    "domain": "ONDC:ONEST10",
+    "action": "on_search",
+    "bap_id": "ondc.beuhub.in",
+    "transaction_id": "test-dummy-12345"
+  },
+  "message": {
+    "catalog": {
+      "providers": [
+        {
+          "id": "provider-1",
+          "name": "TCS (Testing Company)",
+          "items": [
+            {
+              "id": "item-1",
+              "descriptor": {
+                "name": "Dummy Android Developer Internship"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
