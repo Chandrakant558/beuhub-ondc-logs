@@ -1,0 +1,28 @@
+{
+  "context": {
+    "domain": "ONDC:ONEST10",
+    "action": "confirm",
+    "version": "2.0.0",
+    "bap_id": "ondc.beuhub.in",
+    "bap_uri": "https://ondc.beuhub.in/webhook",
+    "location": {
+      "city": { "code": "std:999" },
+      "country": { "code": "IND" }
+    },
+    "transaction_id": "test-dummy-12345",
+    "message_id": "msg-confirm-987654321",
+    "timestamp": "2026-06-19T13:45:00.000Z"
+  },
+  "message": {
+    "order": {
+      "provider": { "id": "provider-1" },
+      "items": [{ "id": "item-1" }],
+      "fulfillments": [{
+        "customer": {
+          "person": { "name": "Rahul Kumar" },
+          "contact": { "email": "rahul@example.com", "phone": "9876543210" }
+        }
+      }]
+    }
+  }
+}
